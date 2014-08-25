@@ -1,0 +1,97 @@
+/*
+Template Name: School Education
+File: Tables CSS
+Author: OS Templates
+Author URI: #
+Licence: <a href="#">Website Template Licence</a>
+*/
+table{
+	width:95%;
+	border-collapse:collapse;
+	table-layout:auto;
+	vertical-align:middle;
+	margin:0 auto;
+	margin-bottom:20px;
+	border:1px solid #CCCCCC;
+	}
+
+table thead th{
+	color:#FFFFFF;
+	background-color:#666666;
+	border:1px solid #CCCCCC;
+	border-collapse:collapse;
+	text-align:center;
+	table-layout:auto;
+	vertical-align:middle;
+	}
+
+table tbody td{
+	vertical-align:middle;
+	border-collapse:collapse;
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+	}
+	
+table thead th, table tbody td{
+	padding:5px;
+	border-collapse:collapse;
+	}
+/*
+table tbody tr:nth-child(odd){
+	color:#666666;
+	background-color:#F7F7F7;
+}
+table tbody tr:nth-child(even){
+	color:#666666;
+	background-color:#E8E8E8;
+}
+*/
+table tbody tr.light{
+	color:#666666;
+	background-color:#F7F7F7;
+	}
+	
+table tbody tr.dark{
+	color:#666666;
+	background-color:#E8E8E8;
+	}
+#fruit *{
+	position:relative;
+}
+#fruit ul{
+	list-style:none;
+	}
+#fruit table tbody tr td img{
+	display:inline;
+	width:15px;
+	height:15px;
+}
+#fruit table tbody tr td a{
+	background:none;
+}
+#fruit table tbody tr td a p{
+	position:absolute;
+	top:-32px;
+	left:-35px;
+	visibility:hidden;
+	background-color:#FFC;
+	line-height:16px;
+	display:block;
+	z-index:2;
+}
+#fruit table tbody tr td a:hover p{
+	position:absolute;
+	top:-32px;
+	left:-35px;
+	visibility:visible;
+	background-color:#FFC;
+	line-height:16px;
+	display:block;
+	z-index:2;
+}
+#fruit table tbody tr td{
+	text-align:center;
+}
+#fruit ul li div{
+	overflow:hidden;
+}
