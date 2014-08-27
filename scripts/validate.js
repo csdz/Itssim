@@ -44,8 +44,9 @@ function validate(event){
 	var comment=target.elements["comment"];
 	if(!isName(name.value)){
 		name.style.backgroundColor="#FCF";
-		EventUtil.preventDefault(event);
+		EventUtil.preventDefault(event);   //阻止表单提交到action的处理地址
 		findNext(name,"LABEL").innerHTML="请输入正确的中文姓名！";
+
 	}
 	if(career.value=="0"||career.value==""){
 		career.style.backgroundColor="#FCF";

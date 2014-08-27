@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>浙江大学智能交通实验室|研究方向</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="stylesheet" href="styles/iframe.css" type="text/css" />
+</head>
+<body>
+<div class="wrapper">
+    <div id="content"> <!--左边内容区-->
+      <h1>实验室简介</h1>
+      <div class="pic">
+      <img id="showpic" src="images/traffic_1.jpg" width="400" height="250" />
+      </div>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙江大学控制科学与工程学系智能交通实验室是王慧教授课题组由2000年左右组建的，目前共有教授2人，副教授1人，硕士8人，主要研究方向包括交通流理论、城市交通诱导和控制、视频检测、车联网信号控制等。十多年来，课题组先后承担了包括国家级、省级自然科学基金、国家“863”计划以及在内的国家级项目多项，发表学术论文80余篇，其中SCI/EI/ISTP检索20余篇。迄今为止，智能交通课题组共培养博士研究生8人、硕士研究生30余人，为高校和社会输送了大量优秀的高技术人才。课题组同时也在杭州，诸暨，绍兴等中小型城市中，针对交通控制和管理提供参考意见。</p>
+    </div>
+    <div class="clear"></div>
+</div>
+</body>
+<script type="text/javascript">
+window.onload=function(){
+	var curIndex=0;  
+	var timeInterval=1000; 
+	var arr=new Array(); 
+	arr[0]="traffic_1.jpg"; 
+	arr[1]="traffic_2.jpg"; 
+	arr[2]="traffic_3.jpg"; 
+	arr[3]="traffic_4.jpg"; 
+	setInterval(changeImg,timeInterval); 
+	function changeImg() 
+	{ 
+		var obj=document.getElementById("showpic"); 
+		if (curIndex==arr.length-1) 
+		{ 
+			curIndex=0; 
+		} 
+		else 
+		{ 
+			curIndex+=1; 
+		} 
+		obj.src="images/"+arr[curIndex]; 
+	} 	
+	};
+</script>
+</html>

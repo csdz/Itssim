@@ -207,6 +207,18 @@ div.col2{
 	display:block;
 	width:530px;
 	}
+#homecontent .fl_left .column2 p{
+	line-height:18px;
+}
+#homecontent div.notice ul li p{
+	display:block;
+	margin:0;
+	margin-right:10px;
+	padding:5px 10px 5px 20px;
+	color:#777777;
+	background:url("../images/blue_file.gif") no-repeat 10px 10px #F9F9F9;
+	text-decoration:none;
+}
 /*
 #homecontent .fl_left li{
 	display:block;
