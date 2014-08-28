@@ -61,13 +61,15 @@
 	margin:0;
 	border:0;
 }
-#picWall h1{
+#picWall h2{
 	font-size:20px;
 	margin:0 0 15px 0;
 	padding-bottom:8px;
 	color:#666666;
 	/*background-color:#FFFFFF;*/
 	border-bottom:1px dotted #999999;
+	font-weight:bold;
+	padding-left:5px;
 	}
 #picWall li a div.text{
 	width:100%;  /*width等于父容器*/

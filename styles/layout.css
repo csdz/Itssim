@@ -158,9 +158,6 @@ div.col2{
 #container{
 	padding:20px 0;
 	margin-bottom:30px;
-	/*
-	min-height:550px;
-	*/
 	}
 
 #container h1, #container h2, #container h3, #container h4, #container h5, #container h6, #homecontent h2{
@@ -195,22 +192,20 @@ div.col2{
 	text-align:right;
 	}
 
-/* Left Column */
-
 #homecontent .fl_left{
 	display:block;
 	float:left;
 	width:530px;
 	}
 
-#homecontent .fl_left .column2{
-	display:block;
-	width:530px;
-	}
-#homecontent .fl_left .column2 p{
+#homecontent .fl_left h2{
+	font-weight:bold;
+}
+#homecontent .fl_left p{
 	line-height:18px;
 }
-#homecontent div.notice ul li p{
+
+#homecontent .fl_right ul li p{
 	display:block;
 	margin:0;
 	margin-right:10px;
@@ -219,26 +214,9 @@ div.col2{
 	background:url("../images/blue_file.gif") no-repeat 10px 10px #F9F9F9;
 	text-decoration:none;
 }
-/*
-#homecontent .fl_left li{
-	display:block;
-	float:left;
-	width:250px;
-	margin:0 30px 30px 0;
-	padding:0;
-	}
-#homecontent .fl_left li.last{margin-right:0;}
-#homecontent .fl_left p.readmore{
-	display:block;
-	width:240px;
-	padding:5px;
-	text-align:right;
-	line-height:normal;
+#homecontent .fl_right h2{
 	font-weight:bold;
-	}
-*/
-
-/* Right Column */
+}
 
 #homecontent .fl_right{
 	display:block;
@@ -256,20 +234,7 @@ div.col2{
 #homecontent .fl_right li.last{
 	border-bottom:none;
 	}
-#homecontent .fl_right img{
-	float:left;
-	width:80px;
-	height:80px;
-	margin:0 10px 0 0;
-	}
-/*
-#homecontent .notice{
-	background-color:#F9F9F9;
-	}
-*/
-iframe{       /*firefox中frameborder失效*/
-	border:0;
-}
+
 /* ----------------------------------------------Content-------------------------------------*/
 
 #content{
@@ -277,29 +242,6 @@ iframe{       /*firefox中frameborder失效*/
 	float:left;
 	width:600px;
 	}
-
-/* ------Comments-----*/
-
-#comments{margin-bottom:40px;}
-
-#comments .commentlist {margin:0; padding:0;}
-
-#comments .commentlist ul{margin:0; padding:0; list-style:none;}
-
-#comments .commentlist li.comment_odd, #comments .commentlist li.comment_even{margin:0 0 10px 0; padding:15px; list-style:none;}
-
-#comments .commentlist li.comment_odd{color:#666666; background-color:#F7F7F7;}
-#comments .commentlist li.comment_odd a{color:#02ACEE; background-color:#F7F7F7;}
-
-#comments .commentlist li.comment_even{color:#666666; background-color:#E8E8E8;}
-#comments .commentlist li.comment_even a{color:#02ACEE; background-color:#E8E8E8;}
-
-#comments .commentlist .author .name{font-weight:bold;}
-#comments .commentlist .submitdate{font-size:smaller;}
-
-#comments .commentlist p{margin:10px 5px 10px 0; padding:0; font-weight: normal;text-transform: none;}
-
-#comments .commentlist li .avatar{float:right; border:1px solid #EEEEEE; margin:0 0 0 10px;}
 
 /* ----------------------------------------------Column-------------------------------------*/
 

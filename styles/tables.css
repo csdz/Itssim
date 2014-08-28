@@ -54,7 +54,7 @@ table tbody tr:nth-child(even){
 	
 #fruit table tbody tr.dark{
 	color:#666666;
-	background-color:#E8E8E8;
+	background-color:#E1EAFF;
 	}
 #fruit *{
 	position:relative;
@@ -66,6 +66,14 @@ table tbody tr:nth-child(even){
 	display:inline;
 	width:15px;
 	height:15px;
+}
+#fruit ul li a h2{	
+	font-weight:bold;
+	background:url(../images/blue_file.gif) no-repeat 10px 10px #F9F9F9;
+	padding-left:20px;
+}
+#fruit ul li a:hover h2{	
+	border-bottom:1px solid #02ACEE;
 }
 #fruit table tbody tr td a{
 	background:none;
