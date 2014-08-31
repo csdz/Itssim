@@ -42,10 +42,10 @@ Dim ConstFromNameCn,ConstFromNameEn,ConstFrom,ConstMailDomain,ConstMailServerUse
 
 ConstFromNameCn = "itssim.com"'发信人中文姓名(发中文邮件的时候使用)，例如'张三'
 ConstFromNameEn = "itssim.com"'发信人英文姓名(发英文邮件的时候使用)，例如'zhangsan'
-ConstFrom = "five_yu@sina.com"'发信人邮件地址，例如'zhangsan@163.com'
-ConstMailDomain = "smtp.sina.com"'smtp服务器地址，例如smtp.163.com
-ConstMailServerUserName = "five_yu"'smtp服务器的信箱登陆名，例如'zhangsan'。注意要与发信人邮件地址一致！
-ConstMailServerPassword = "002597xl"'smtp服务器的信箱登陆密码
+ConstFrom = "1073050691@qq.com"'发信人邮件地址，例如'zhangsan@163.com'
+ConstMailDomain = "smtp.qq.com"'smtp服务器地址，例如smtp.163.com
+ConstMailServerUserName = "1073050691"'smtp服务器的信箱登陆名，例如'zhangsan'。注意要与发信人邮件地址一致！
+ConstMailServerPassword = "262302zw"'smtp服务器的信箱登陆密码
 '***************根据需要设置常量结束*****************
 
 '-----------------------------以下内容无需改动------------------------------
@@ -106,7 +106,7 @@ If Err Then
 Jmail=Err.Description
 Err.Clear
 Else
-Jmail="<script language=javascript>alert('您的留言已提交，我们会尽快处理！感谢访问本网站！');location='index.html';</script>"
+Jmail="<script language=javascript>alert('您的留言已提交，我们会尽快处理！感谢访问本网站！');location='contact.html';</script>"
 End If
 
 On Error Goto 0
