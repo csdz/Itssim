@@ -1,12 +1,6 @@
 <%@ CODEPAGE=65001 %>
 <% Response.CodePage=65001%>
 <% Response.Charset="UTF-8" %>
-<html>
-<head>
-<title></title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-</head>
-<body>
 
 <%
 Dim SendStat
@@ -106,7 +100,7 @@ If Err Then
 Jmail=Err.Description
 Err.Clear
 Else
-Jmail="<script language=javascript>alert('您的留言已提交，我们会尽快处理！感谢访问本网站！');location='contact.html';</script>"
+Jmail=Request.Form("name")&"，您好！您的留言已提交，我们会尽快处理！感谢访问本网站！"
 End If
 
 On Error Goto 0
@@ -114,12 +108,4 @@ End Function
 '--------------------------------------------------------------------
 %>
 
-
-
-
-
-      
-
-</body>
-</html>
 
