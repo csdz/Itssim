@@ -13,12 +13,6 @@
  <script type="text/javascript" src="scripts/jquery.form.js"></script>
 <script type="text/javascript" src="scripts/global.js"></script>
     <script type="text/javascript">
-        /*
-        var $name=$("form#messageForm input[name=name]");
-        var $career= $("form#messageForm select[name=career]");
-        var $email= $("form#messageForm input[name=email]");
-        var $comment=$("form#messageForm textarea[name=comment]");
-        */
         function isEmail(str){
             var reg = /^[-_A-Za-z0-9]+@([_A-Za-z0-9]+\.)+[A-Za-z0-9]{2,3}$/;
             return reg.test(str);
@@ -37,16 +31,13 @@
         }
         $(document).ready(function(){
             var $form=$("form#messageForm");
-            var $name=$("input#name");
-            //alert($name[0].tagName);
-            var $career=$("select#career");
-            //alert($career[0].tagName);
-            var $email= $("input#email");
-            //alert($email[0].tagName);
+            var $name=$("input#name");          
+            var $career=$("select#career");     
+            var $email= $("input#email");       
             var $comment=$("textarea#comment");
-            //alert($comment[0].tagName);
             var $submit=$("input#submit");
             $submit.attr("disabled",false);
+            $submit.val("提交留言");
             $name.focus(function(){
                 $(this).css("backgroundColor","#F7F7F7");
             });
@@ -59,7 +50,6 @@
             $comment.focus(function(){
                 $(this).css("backgroundColor","#F7F7F7");
             });
-            //alert("ok");
             $name.blur(function() {
                 if ($(this).val() != "" && !isName($(this).val())) {
                     $(this).css("backgroundColor", "#FCF");
@@ -93,6 +83,7 @@
             });
             $form[0].onreset=function(){
                 $submit.attr("disabled",false);
+                $submit.val("提交留言");
                 $name.focus();
                 $name.css("backgroundColor","");
                 $name.next("label").html("姓名" );
@@ -103,7 +94,7 @@
                 $comment.css("backgroundColor","");
                 $comment.next("label").css("display","none");
             };
-            var options={          //ajax参数
+            var options={          
                 beforeSubmit:validate,
                 success:showResponse,
                 dataType:null,
@@ -115,7 +106,6 @@
                 if (!isName($name.val())) {
                     $name.css("backgroundColor", "#FCF");
                     $name.next("label").html("请输入正确的中文姓名！");
-                    //alert("error");
                     return false;
                 }
                 if ($career.val() == "0" || $career.val() == "") {
@@ -134,31 +124,22 @@
                     $comment.next("label").html("请输入至少10个汉字的留言！");
                     return false;
                 }
+                $submit.val("已提交");
+                $submit.attr("disabled",true);
                 var queryString=$.param(formData);
                 return true;
             }
-            function showResponse(responseText){       //不能返回asp中response.write内容，返回整个asp内容
-               alert(responseText);
+            function showResponse(responseText){       
+                $submit.val("提交留言");
+                alert(responseText);
                $name.focus();
                $submit.attr("disabled",false);
-                //alert("asp");
             }
             $form.submit(function(){
-                //$(this).ajaxForm(options);
-                //alert("ok");
                 $(this).ajaxSubmit(options);
-                //$form.reset();
-                $submit.attr("disabled",true);
-                //$("#submit").attr("disabled","disabled");
-                //alert("ok");
                 return false;
             })
-
-        });  //$(document).ready()
-
-
-
-
+        }); 
     </script>
 </head>
 <body>
@@ -303,6 +284,5 @@
 		<br class="clear" />
 	  </div>
 	</div>
-<!--<script type="text/javascript" src="scripts/validate.js"></script>-->
 </body>
 </html>
