@@ -45,6 +45,8 @@
             //alert($email[0].tagName);
             var $comment=$("textarea#comment");
             //alert($comment[0].tagName);
+            var $submit=$("input#submit");
+            $submit.attr("disabled",false);
             $name.focus(function(){
                 $(this).css("backgroundColor","#F7F7F7");
             });
@@ -90,6 +92,7 @@
                 }
             });
             $form[0].onreset=function(){
+                $submit.attr("disabled",false);
                 $name.focus();
                 $name.css("backgroundColor","");
                 $name.next("label").html("姓名" );
@@ -135,17 +138,19 @@
                 return true;
             }
             function showResponse(responseText){       //不能返回asp中response.write内容，返回整个asp内容
-                alert(responseText);
+               alert(responseText);
+               $name.focus();
+               $submit.attr("disabled",false);
                 //alert("asp");
             }
             $form.submit(function(){
                 //$(this).ajaxForm(options);
                 //alert("ok");
-
                 $(this).ajaxSubmit(options);
+                //$form.reset();
+                $submit.attr("disabled",true);
                 //$("#submit").attr("disabled","disabled");
                 //alert("ok");
-
                 return false;
             })
 
