@@ -131,9 +131,9 @@
             }
             function showResponse(responseText){       
                 $submit.val("提交留言");
+				$submit.attr("disabled",false);
                 alert(responseText);
                $name.focus();
-               $submit.attr("disabled",false);
             }
             $form.submit(function(){
                 $(this).ajaxSubmit(options);
