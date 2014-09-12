@@ -3,8 +3,6 @@
 <head>
 <title>浙江大学智能交通实验室-联系我们</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="浙江大学控制科学与工程学系智能交通实验室是王慧教授课题组由2000年左右组建的，目前共有教授2人，副教授1人，硕士8人，主要研究方向包括交通流理论、城市交通诱导和控制、视频检测、车联网信号控制等。十多年来，课题组先后承担了包括国家级、省级自然科学基金、国家“863”计划以及在内的国家级项目多项，发表学术论文80余篇，其中SCI/EI/ISTP检索20余篇。" />   
-<meta name="keywords" content="智能交通,浙江大学,联系我们" />
 <link rel="stylesheet" href="styles/layout.css" type="text/css" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
 <script type="text/javascript"> 
@@ -38,6 +36,10 @@
             var $submit=$("input#submit");
             $submit.attr("disabled",false);
             $submit.val("提交留言");
+			$name.val("");
+			$career.val("");
+			$email.val("");
+			$comment.val("");
             $name.focus(function(){
                 $(this).css("backgroundColor","#F7F7F7");
             });
@@ -146,12 +148,10 @@
 <!-- ####################################################################################################### -->
 <div class="wrapper col1">
   <div id="header">
-	<a href="index.html">
 	<img src="images/zjuLogo.png">
     <div id="logo">
       <h1>智能交通实验室</h1>
     </div>
-	 </a>
     <div id="topnav">
       <ul>
         <li><a href="index.html">主页</a></li>
@@ -244,32 +244,32 @@
 		<div>
 			<div class="footbox">
 			  <ul>
-				<li><a href="http://www.zju.edu.cn/">浙江大学</a></li>
-				<li class="last"><a href="http://www.cse.zju.edu.cn">浙江大学控制科学与工程学系</a></li>
+				<li><a href="http://www.zju.edu.cn/" target="_blank">浙江大学</a></li>
+				<li class="last"><a href="http://www.cse.zju.edu.cn" target="_blank">浙江大学控制科学与工程学系</a></li>
 			  </ul>
 			</div>
 			<div class="footbox">
 			  <ul>
-				<li><a href="http://libweb.zju.edu.cn/libweb/">浙江大学图书馆</a></li>
-				<li class="last"><a href="http://grs.zju.edu.cn/index.jsf">浙江大学研究生院</a></li>
+				<li><a href="http://libweb.zju.edu.cn/libweb/" target="_blank">浙江大学图书馆</a></li>
+				<li class="last"><a href="http://grs.zju.edu.cn/index.jsf" target="_blank">浙江大学研究生院</a></li>
 			  </ul>
 			</div>
 			<div class="footbox">
 			  <ul>
-				<li><a href="http://www.cc98.org">cc98论坛</a></li>
-				<li class="last"><a href="http://proxy3.zju88.net/agent/index.do">飘渺水云间</a></li>
+				<li><a href="http://www.cc98.org" target="_blank">cc98论坛</a></li>
+				<li class="last"><a href="http://proxy3.zju88.net/agent/index.do" target="_blank">飘渺水云间</a></li>
 			  </ul>
 			</div>
 			<div class="footbox">
 			  <ul>
-				<li><a href="http://www.nlict.zju.edu.cn/">工业控制技术国家重点实验室</a></li>
-				<li class="last"><a href="http://www.itsc.com.cn/">国家智能交通系统工程技术研究中心</a></li>
+				<li><a href="http://www.nlict.zju.edu.cn/" target="_blank">工业控制技术国家重点实验室</a></li>
+				<li class="last"><a href="http://www.itsc.com.cn/" target="_blank">国家智能交通系统工程技术研究中心</a></li>
 			  </ul>
 			</div>
 			<div class="footbox last">
 			  <ul>
-				<li><a href="http://www.cpsits.com/">中国智能交通网</a></li>
-				<li class="last"><a href="http://www.itschina.org/">中国智能交通协会</a></li>
+				<li><a href="http://www.cpsits.com/" target="_blank">中国智能交通网</a></li>
+				<li class="last"><a href="http://www.itschina.org/" target="_blank">中国智能交通协会</a></li>
 			  </ul>
 			</div>
 			<br class="clear" />
@@ -279,7 +279,7 @@
 	<!-- ####################################################################################################### -->
 	<div class="wrapper col5">
 	  <div id="copyright">
-		<p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">cute小顽童</a></p>
+		<p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="javascript:void(0)">cute小顽童</a></p>
 		<p class="fl_right">Author's email address : cutezhangwang@gmail.com </p>
 		<br class="clear" />
 	  </div>
