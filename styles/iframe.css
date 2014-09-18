@@ -40,7 +40,12 @@ div.pic{
 	text-align:center;
 }
 #showpic{
+	margin:0px;
+	padding:0px;
+	border:none;
 	display:inline;
+	background:url(../images/traffic.jpg) no-repeat 0px 0px;
+	overflow:hidden;
 }
 #content{
 	width:100%;
@@ -93,7 +98,6 @@ table.project tbody tr.light{
 	color:#666666;
 	background-color:#F7F7F7;
 	}
-	
 table.project tbody tr.dark{
 	color:#666666;
 	background-color:#E8E8E8;

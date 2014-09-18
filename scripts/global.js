@@ -51,14 +51,16 @@ function navigatorHide(){
 				parentElement.style.opacity=0.6;
 			}
 			catch(error){
-				parentElement.filter.alpha.opacity=60;  //老版IE????
+				alert("ok");
+				parentElement.style.filter='alpha(opacity:60)';  //老版IE????
 			}
 		}else{
 			try{
 				parentElement.style.opacity=1;
 			}
 			catch(error){
-				parentElement.filter.alpha.opacity=100;  //老版IE???? 
+				alert("ok");
+				parentElement.style.filter='alpha(opacity:100)';  //老版IE???? 
 			}
 		}
 	}
