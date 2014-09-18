@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="global.js" server="210.209.114.18/web/" local="130548342746360186" remote="130537938600000000" Dst="0" />
-<file name="picture_cycle.js" server="210.209.114.18/web/" local="130548342785122403" remote="130537938600000000" Dst="0" />
-<file name="jquery-1.9.1.min.js" server="210.209.114.18/web/" local="130548342832345104" remote="130537938600000000" Dst="0" />
-<file name="jquery.form.js" server="210.209.114.18/web/" local="130548342824884678" remote="130548333600000000" Dst="0" />
-<file name="validate.js" server="210.209.114.18/web/" local="130548342828684895" remote="130537938600000000" Dst="0" />
+<file name="global.js" server="210.209.114.18/web/" local="130555187066148920" remote="130555209600000000" Dst="0" />
+<file name="picture_cycle.js" server="210.209.114.18/web/" local="130555120836300789" remote="130555121400000000" Dst="0" />
+<file name="jquery.form.js" server="210.209.114.18/web/" local="130554991228057968" remote="130554934800000000" Dst="0" />
+<file name="jquery-1.9.1.min.js" server="210.209.114.18/web/" local="130554991230008079" remote="130554934800000000" Dst="0" />
+<file name="form.js" server="210.209.114.18/web/" local="130555188671380734" remote="130555209600000000" Dst="0" />
+<file name="slide.js" server="210.209.114.18/web/" local="130555190186807411" remote="130555209600000000" Dst="0" />
+<file name="team_item.js" server="210.209.114.18/web/" local="130555191095269372" remote="130555209600000000" Dst="0" />
 </dwsync>

@@ -88,6 +88,8 @@ TransformView.prototype = {
   }
 };
 window.onload=function(){
+	var control_item=document.getElementById("control_id");
+	control_item.style.visibility="visible";
 	function Each(list, fun){
 		for (var i = 0, len = list.length; i < len; i++) { fun(list[i], i); }
 	};

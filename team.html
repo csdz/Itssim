@@ -9,6 +9,7 @@
 !window.jQuery && document.write('<script src="scripts/jquery-1.9.1.min.js"><\/script>'); 
 </script> 
 <script type="text/javascript" src="scripts/global.js"></script>
+<script type="text/javascript" src="scripts/team_item.js"></script>
 </head>
 <body>
 <div class="wrapper col1">
@@ -36,9 +37,9 @@
       <li>&#187;</li>
       <li><a href="team.html">团队介绍</a></li>
       <li>&#187;</li>
-      <li>实验室介绍</li>
+      <li class="item_1">实验室介绍</li>
       <li>&#187;</li>
-      <li>研究方向</li>
+      <li class="item_2">研究方向</li>
     </ul>
   </div>
 </div>
@@ -54,24 +55,24 @@
       <div class="subnav">
         <h2>团队介绍</h2>
         <ul>
-          <li class="level_1"><a href="team_zongtijieshao.html" target="detail">实验室介绍</a>
+          <li><a class="level_1" href="team_zongtijieshao.html" target="detail">实验室介绍</a>
 			<ul>
-              <li class="level_2"><a href="team_zongtijieshao.html" target="detail">总体简介</a></li>
-			  <li class="level_2"><a href="team_yanjiuchengguo.html" target="detail">研究成果</a></li>
+              <li><a class="level_2" href="team_zongtijieshao.html" target="detail">总体简介</a></li>
+			  <li><a class="level_2" href="team_yanjiuchengguo.html" target="detail">研究成果</a></li>
             </ul>
 		  </li>
-          <li class="level_1"><a href="team_wanghui.html" target="detail">导师介绍</a>
+          <li><a class="level_1" href="team_wanghui.html" target="detail">导师介绍</a>
             <ul>
-              <li class="level_2"><a href="team_wanghui.html" target="detail">王慧教授</a></li>
-			  <li class="level_2"><a href="team_songchunyue.html" target="detail">宋春跃教授</a></li>
-			  <li class="level_2"><a href="team_liuhong.html" target="detail">刘泓副教授</a></li>
+              <li><a class="level_2" href="team_wanghui.html" target="detail">王慧教授</a></li>
+			  <li><a class="level_2" href="team_songchunyue.html" target="detail">宋春跃教授</a></li>
+			  <li><a class="level_2" href="team_liuhong.html" target="detail">刘泓副教授</a></li>
             </ul class="inner">
           </li>
-          <li class="level_1"><a href="team_2012.html" target="detail">硕士生成员</a>
+          <li><a class="level_1" href="team_2012.html" target="detail">硕士生成员</a>
             <ul>
-              <li class="level_2"><a href="team_2012.html" target="detail">2012级</a></li>
-			  <li class="level_2"><a href="team_2013.html" target="detail">2013级</a></li>
-              <li class="level_2"><a href="team_2014.html" target="detail">2014级</a></li>
+              <li><a class="level_2" href="team_2012.html" target="detail">2012级</a></li>
+			  <li><a class="level_2" href="team_2013.html" target="detail">2013级</a></li>
+              <li><a class="level_2" href="team_2014.html" target="detail">2014级</a></li>
             </ul>
           </li> 
         </ul>
@@ -122,65 +123,10 @@
 	<!-- ####################################################################################################### -->
 	<div class="wrapper col5">
 	  <div id="copyright">
-		<p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="javascript:void(0)">cute小顽童</a></p>
-		<p class="fl_right">Author's email address : cutezhangwang@gmail.com </p>
+		<p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - cute小顽童</p>
+		<p class="fl_right">Author's email address : <a href="mailto:cutezhangwang@gmail.com">cutezhangwang@gmail.com</a></p>
 		<br class="clear" />
 	  </div>
 	</div>
-	<script type="text/javascript"> <!--此处用jqeury实现就好，html中已写好li的class名称，level_1/2-->
-	window.onload=placeDis;
-	function placeDis(){
-		if(document.getElementById && document.getElementsByTagName){
-			var links=document.getElementById("column").getElementsByTagName("A");
-			//alert(lis.length);
-			for(var i=0; i<links.length ;i++){
-				EventUtil.addHandler(links[i],"click",changePlaceName);
-			}
-		}
-	}
-	function changePlaceName(event){
-		//alert("ok");
-		event=EventUtil.getEvent(event);
-		var tar=EventUtil.getTarget(event);
-		//alert(tar.nodeName);
-		//alert(tar.parentNode.parentNode.parentNode.nodeName);
-		if(tar.parentNode.parentNode.parentNode.nodeName=="LI"){
-			var tempNode=tar.parentNode.parentNode.previousSibling.previousSibling;
-			//alert(tempNode.nodeName);
-			//alert(tempNode.nodeType);
-			while(tempNode!=null){
-				if(tempNode.nodeType==1){
-					var name_parent=tempNode.innerHTML;
-					//alert(name_parent);
-					break;
-					
-				}else {
-					tempNode=tempNode.previousSibling;
-				}
-			}
-			var name_child=tar.innerHTML;
-			//alert(name_child);
-		}
-		else{
-			var name_parent=tar.innerHTML;
-			//alert(name_parent);
-			var tempNode=tar.nextSibling;
-			//alert(tempNode.nodeName);
-			while(tempNode!=null){
-				if(tempNode.nodeType==1){
-					var name_child=tempNode.getElementsByTagName("A")[0].innerHTML;
-					//alert(name_child);
-					break;
-				}else {
-					tempNode=tempNode.nextSibling;
-				}
-			}
-		}		
-		var list=document.getElementById("breadcrumb").getElementsByTagName("LI");
-		list[list.length-1].innerHTML=name_child;
-		list[list.length-3].innerHTML=name_parent;
-		EventUtil.stopPropagation(event);
-	}
-	</script>
 </body>
 </html>

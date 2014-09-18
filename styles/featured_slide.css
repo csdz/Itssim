@@ -18,6 +18,12 @@
 	list-style:none;
 	text-decoration:none;
 	}
+#featured_slide ul.picture{
+	list-style:none;
+	width:9000px;
+	position:absolute;
+	background:url(../images/loading_circle.gif) no-repeat 435px 205px; 
+}
 #featured_slide ul.picture li{
 	display:inline;
 	float:left;
@@ -42,15 +48,11 @@
 #featured_slide img.home_five{
 	background:url(../images/pic_home.jpg) no-repeat -3840px 0px;
 }
-#featured_slide ul.picture{
-	list-style:none;
-	width:9000px;
-	position:absolute; 
-}
 #featured_slide ul.control {
 	position:absolute;
 	right:15px;
 	bottom:15px;
+	visibility:hidden;
 }
 #featured_slide ul.control li{
 	float: left;

@@ -3,7 +3,6 @@
 @import url(forms.css);
 @import url(tables.css);
 @import url(featured_slide.css);
-@import url(loginslider.css);
 @import url(photowall.css);
 
 
@@ -425,3 +424,7 @@ div.col2{
 	margin:0;
 	padding:0;
 	}
+#copyright p a{
+	text-decoration:underline;
+	
+}

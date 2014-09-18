@@ -38,6 +38,7 @@ img{border:1px solid #999999; padding:5px;}
 div.pic{
 	margin:10px auto 40px auto;
 	text-align:center;
+	background:url(../images/loading_line.gif) no-repeat center center
 }
 #showpic{
 	margin:0px;
