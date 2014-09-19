@@ -4,6 +4,7 @@
 @import url(tables.css);
 @import url(featured_slide.css);
 @import url(photowall.css);
+@import url(car.css);
 
 
 body{
@@ -209,6 +210,7 @@ div.col2{
 	display:block;
 	float:right;
 	width:385px;
+	overflow:hidden;
 	}
 
 #homecontent .fl_right li{

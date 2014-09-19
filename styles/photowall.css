@@ -41,6 +41,7 @@
 }
 #picWall li a:hover{
 	display:block;
+	background:url(../images/loading_mini.gif) no-repeat center center;
 	position:absolute;
 	margin-top:-20px;    /*使用margin进行偏移，增加的数值除以2*/
 	margin-left:-20px;
