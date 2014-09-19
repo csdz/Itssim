@@ -4,17 +4,6 @@
 <title>浙江大学智能交通实验室-总体介绍</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="styles/iframe.css" type="text/css" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
-<script type="text/javascript"> 
-!window.jQuery && document.write('<script src="scripts/jquery-1.9.1.min.js"><\/script>'); 
-</script> 
-<script type="text/javascript">
-	$(window.parent.document).find("#detail_frame").load(function(){
-	var main = $(window.parent.document).find("#detail_frame");
-	var mainheight = $(document).height()+30;
-	main.height(mainheight<800?800:mainheight);
-});
-</script>
 </head>
 <body>
 <div class="wrapper">
@@ -27,26 +16,10 @@
     </div>
     <div class="clear"></div>
 </div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+<script type="text/javascript"> 
+!window.jQuery && document.write('<script src="scripts/jquery-1.9.1.min.js"><\/script>'); 
+</script> 
+<script type="text/javascript" src="scripts/image_change.js"></script>
 </body>
-<script type="text/javascript">
-window.onload=function(){
-	var curIndex=0;  
-	var timeInterval=1000; 
-	var img_num=6;
-	setInterval(changeImg,timeInterval); 
-	function changeImg() 
-	{ 
-		var obj=document.getElementById("showpic"); 
-		if (curIndex==img_num-1) 
-		{ 
-			curIndex=0; 
-		} 
-		else 
-		{ 
-			curIndex+=1; 
-		} 
-		obj.style.backgroundPosition=parseInt(-curIndex*450)+"px"+" "+0;
-	} 	
-	};
-</script>
 </html>
